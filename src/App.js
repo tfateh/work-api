@@ -13,7 +13,7 @@ function App() {
   useEffect(() => {
     const fetchData=async()=>{
       try {
-        const {data}=await axios.get(`https://reqres.in/api/users?page=${page}`)
+        const {data}=await axios.get(`https://jsonplaceholder.typicode.com/users?page=${page}`)
         setData(data.data)
       } catch (error) {
         setErreur(error)
